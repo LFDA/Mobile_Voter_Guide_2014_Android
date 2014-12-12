@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.voterguide.CandidatesFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/select_city"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#4064BC"
+                android:gravity="center"
+                android:text="@string/select_city_title"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+        <com.voterguide.IndexableListView
+            android:id="@+id/fast_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</FrameLayout>
